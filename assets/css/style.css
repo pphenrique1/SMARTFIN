@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-family: 'Montserrat';
+}
+
+
+.section-wrapper{
+    height: 100vh;
+}
+.section-upside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-downside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    min-width: 344px;
+    width: 344px;
+}
+
+.section-text{
+    text-align: center;
+    
+}
+.section-text h1{
+    font-weight: 700;
+    
+}
+.section-btn{
+    max-width: 500px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#btn-cliente{
+    width: 100%;
+    background-color:  #092444;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+#btn-cliente:hover{
+    background-color:  #15355D;
+}
+
+#btnQueroAbrir{
+    width: 100%;
+    border: 1px solid #092444;
+    color: #092444;
+    transition: 0.3s ease-in-out;
+}
+#btnQueroAbrir:hover{
+    background-color: #092444;
+    color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+	
+    .imgLogo{
+        width: 100%;
+    }
+
+    .header-logo{
+        
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        
+    }
+    .section-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-downside{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        width: 344px;
+        min-width: 344px;
+        height: 280px;
+    }
+    
+}
+@media screen and (min-width: 700px) {
+	
+    .imgLogo{
+        width: 90%;
+    }
+    
+    .section-wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .header-logo{
+        width: 100%;
+        margin:auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .section-downside{
+        width: 344px;
+        min-width: 344px;
+    }
+    .section-upside{
+        padding: rem;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
